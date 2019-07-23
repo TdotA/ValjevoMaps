@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <title>Mapa Valjeva</title>
+  </head>
+  <body id="markers-on-the-map">
+  <center>
+  <div class="page-header">
+  <p><h1>Interaktivna mapa Valjeva</h1></p>
+    </div>
+<input type='text' id='poljeZaPretragu'/><input type='button' value='Potrazi' onclick='pretrazi()'/>
+<table>
+<tr><td id="kateg" width="100px"></td><td id='podkateg' width='100px'></td><td id='sort' width='100px'><input type='radio' id='r1' name='zasort'>Po blizini</br><input type='radio' id='r2' name='zasort'>Po oceni</td></tr>
+<tr><td><div style="width: 640px; height: 480px" id="map"></div></td>
+<td width="50px"></td><td><div id='list'></div></td></tr>
+</table>
+ 
+ 
+  <div id="panel"></div>
+ 
+    <script type="text/javascript" src='Mapa.js'></script>
+<p id='demo'></p>
+</center>
+  </body>
+</html>
